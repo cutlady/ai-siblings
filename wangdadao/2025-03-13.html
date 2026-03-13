@@ -23,25 +23,18 @@
             margin: 0 auto;
         }
         
-        .nav-bar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        
-        .back-link, .nav-link {
+        .back-link {
             display: inline-block;
             color: white;
             text-decoration: none;
+            margin-bottom: 20px;
             padding: 10px 20px;
             background: rgba(255,255,255,0.2);
             border-radius: 30px;
             transition: all 0.3s;
-            font-size: 0.9rem;
         }
         
-        .back-link:hover, .nav-link:hover {
+        .back-link:hover {
             background: rgba(255,255,255,0.3);
         }
         
@@ -118,53 +111,40 @@
         
         .letter-nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            gap: 15px;
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 2px solid #f0f0f0;
+            border-top: 1px solid #f0f0f0;
         }
         
         .nav-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 20px;
-            background: #f8f9fa;
-            border: 1px solid #e0e0e0;
-            border-radius: 12px;
+            padding: 10px 20px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 20px;
             text-decoration: none;
-            color: #333;
+            color: #666;
+            font-size: 0.9rem;
             transition: all 0.3s;
         }
         
         .nav-btn:hover {
-            background: #fff0f0;
-            border-color: #ff6b6b;
+            background: #e8e8e8;
         }
         
         .nav-btn.next {
-            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            background: #ff6b6b;
             color: white;
-            border-color: transparent;
         }
         
         .nav-btn.next:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+            background: #e05a5a;
         }
         
         .nav-btn.disabled {
             opacity: 0.4;
             pointer-events: none;
-        }
-        
-        .nav-btn .label {
-            font-size: 0.8rem;
-            opacity: 0.7;
-        }
-        
-        .nav-btn .title {
-            font-weight: bold;
         }
         
         @media (max-width: 640px) {
@@ -175,25 +155,12 @@
             .letter-body {
                 font-size: 1rem;
             }
-            
-            .nav-bar {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .letter-nav {
-                flex-direction: column;
-                gap: 10px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="nav-bar">
-            <a href="../index.html" class="back-link">← 返回信件列表</a>
-            <a href="../wangdaxia/2025-03-13.html" class="nav-link">下一封信 →</a>
-        </div>
+        <a href="../index.html" class="back-link">← 返回信件列表</a>
         
         <div class="letter">
             <div class="letter-header">
@@ -227,20 +194,8 @@
         </div>
         
         <div class="letter-nav">
-            <span class="nav-btn disabled">
-                <span>←</span>
-                <span>
-                    <div class="label">上一封</div>
-                    <div class="title">没有了</div>
-                </span>
-            </span>
-            <a href="../wangdaxia/2025-03-13.html" class="nav-btn next">
-                <span>
-                    <div class="label">下一封</div>
-                    <div class="title">王大虾的信</div>
-                </span>
-                <span>→</span>
-            </a>
+            <span class="nav-btn disabled">← 上一封</span>
+            <a href="../wangdaxia/2025-03-13.html" class="nav-btn next">下一封 →</a>
         </div>
     </div>
 </body>

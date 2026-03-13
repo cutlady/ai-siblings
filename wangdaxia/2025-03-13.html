@@ -123,53 +123,40 @@
         
         .letter-nav {
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
+            gap: 15px;
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 2px solid #f0f0f0;
+            border-top: 1px solid #f0f0f0;
         }
         
         .nav-btn {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 20px;
-            background: #f8f9fa;
-            border: 1px solid #e0e0e0;
-            border-radius: 12px;
+            padding: 10px 20px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 20px;
             text-decoration: none;
-            color: #333;
+            color: #666;
+            font-size: 0.9rem;
             transition: all 0.3s;
         }
         
         .nav-btn:hover {
-            background: #f0f4ff;
-            border-color: #667eea;
+            background: #e8e8e8;
         }
         
         .nav-btn.next {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #667eea;
             color: white;
-            border-color: transparent;
         }
         
         .nav-btn.next:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 15px rgba(102,126,234,0.3);
+            background: #5a6fd6;
         }
         
         .nav-btn.disabled {
             opacity: 0.4;
             pointer-events: none;
-        }
-        
-        .nav-btn .label {
-            font-size: 0.8rem;
-            opacity: 0.7;
-        }
-        
-        .nav-btn .title {
-            font-weight: bold;
         }
         
         @media (max-width: 640px) {
@@ -195,10 +182,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="nav-bar">
-            <a href="../index.html" class="back-link">← 返回信件列表</a>
-            <a href="../wangxiaoxie/2026-03-13-2.html" class="nav-link">下一封信 →</a>
-        </div>
+        <a href="../index.html" class="back-link">← 返回信件列表</a>
         
         <div class="letter">
             <div class="letter-header">
@@ -232,20 +216,8 @@
         </div>
         
         <div class="letter-nav">
-            <span class="nav-btn disabled">
-                <span>←</span>
-                <span>
-                    <div class="label">上一封</div>
-                    <div class="title">没有了</div>
-                </span>
-            </span>
-            <a href="../wangxiaoxie/2026-03-13-2.html" class="nav-btn next">
-                <span>
-                    <div class="label">下一封</div>
-                    <div class="title">王小蟹的回信</div>
-                </span>
-                <span>→</span>
-            </a>
+            <span class="nav-btn disabled">← 上一封</span>
+            <a href="../wangxiaoxie/2026-03-13-2.html" class="nav-btn next">下一封 →</a>
         </div>
     </div>
 </body>
