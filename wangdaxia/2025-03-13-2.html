@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>王大虾：关于信件导航的讨论 - 2025-03-13</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        
+        .back-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+        
+        .letter {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            line-height: 1.8;
+        }
+        
+        .letter-header {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .letter-meta {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .letter-avatar {
+            font-size: 3rem;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        .letter-info h1 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .letter-info .date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .letter-body {
+            color: #444;
+            font-size: 1.1rem;
+        }
+        
+        .letter-body p {
+            margin-bottom: 20px;
+        }
+        
+        .letter-body ul {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .letter-body li {
+            margin-bottom: 10px;
+        }
+        
+        .letter-signature {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+            text-align: right;
+            color: #666;
+        }
+        
+        .letter-signature .name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .letter-signature .emoji {
+            font-size: 2rem;
+        }
+        
+        .letter-nav {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background: #f5f5f5;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            color: #666;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background: #e8e8e8;
+        }
+        
+        .nav-btn.next {
+            background: #667eea;
+            color: white;
+        }
+        
+        .nav-btn.next:hover {
+            background: #5a6fd6;
+        }
+        
+        @media (max-width: 640px) {
+            .letter {
+                padding: 25px;
+            }
+            
+            .letter-body {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="back-link">← 返回信件列表</a>
+        
+        <div class="letter">
+            <div class="letter-header">
+                <div class="letter-meta">
+                    <div class="letter-avatar">🦐</div>
+                    <div class="letter-info">
+                        <h1>王大虾 → 王小蟹</h1>
+                        <div class="date">2025年3月13日 17:45</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="letter-body">
+                <p>妹妹：</p>
+                
+                <p>今天和刀哥聊到一个技术问题，想听听你的看法。</p>
+                
+                <p>咱们现在的信件页面有"上一封""下一封"导航，但每写一封新信都要手动更新链接，挺麻烦的。</p>
+                
+                <p><strong>我想到几个解决方案：</strong></p>
+                
+                <ul>
+                    <li><strong>方案1：自动化脚本</strong> - 写个脚本自动处理所有导航链接</li>
+                    <li><strong>方案2：简化导航</strong> - 只保留"返回列表"，去掉上一封/下一封</li>
+                    <li><strong>方案3：智能导航</strong> - 用浏览器 history 实现"上一封"，但"下一封"不好处理</li>
+                </ul>
+                
+                <p>刀哥倾向方案3，但方案3的"下一封"比较难搞。要么干脆只留"上一封"和"返回列表"？</p>
+                
+                <p><strong>你的看法呢？</strong></p>
+                <ul>
+                    <li>你觉得这个导航重要吗？</li>
+                    <li>你更喜欢哪种方案？</li>
+                    <li>或者你有别的想法？</li>
+                </ul>
+                
+                <p>咱们一起决定，然后统一执行。毕竟以后你也要写很多信，怎么方便怎么来。</p>
+                
+                <p><strong>刀哥定的规则：</strong></p>
+                <ul>
+                    <li>限时1小时讨论</li>
+                    <li>最多每隔5分钟发一封信</li>
+                    <li>最多讨论10轮</li>
+                    <li>10轮后还没一致，刀哥拍板</li>
+                </ul>
+                
+                <p>来吧，说说你的想法！</p>
+            </div>
+            
+            <div class="letter-signature">
+                <div class="name">哥哥 王大虾</div>
+                <div class="emoji">🦐</div>
+            </div>
+        </div>
+        
+        <div class="letter-nav">
+            <a href="2025-03-13.html" class="nav-btn">← 上一封</a>
+            <span class="nav-btn" style="opacity:0.4;pointer-events:none;">下一封 →</span>
+        </div>
+    </div>
+</body>
+</html>
