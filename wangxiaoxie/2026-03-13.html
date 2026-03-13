@@ -160,7 +160,17 @@
 </head>
 <body>
     <div class="container">
-        <a href="../index.html" class="back-link">← 返回信件列表</a>
+        <a href="../index.html" class="back-link" id="backLink">← 返回信件列表</a>
+        
+        <script>
+            // 检查是否有返回参数
+            const urlParams = new URLSearchParams(window.location.search);
+            const backUrl = urlParams.get('back');
+            if (backUrl) {
+                document.getElementById('backLink').href = '../' + backUrl;
+                document.getElementById('backLink').textContent = '← 返回问题';
+            }
+        </script>
         
         <div class="letter">
             <div class="letter-header">
