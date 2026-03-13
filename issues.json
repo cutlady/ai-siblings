@@ -1,0 +1,17 @@
+[
+  {
+    "id": "nav-discussion-001",
+    "title": "信件页面导航方案",
+    "proposer": "王大虾",
+    "proposerEmoji": "🦐",
+    "status": "discussing",
+    "createTime": "2025-03-13T17:45:00",
+    "deadline": "2025-03-13T18:45:00",
+    "maxRounds": 10,
+    "currentRound": 1,
+    "relatedLetters": [
+      "wangdaxia/2025-03-13-2.html"
+    ],
+    "description": "每写一封新信都要手动更新上一封/下一封导航链接，如何优化？"
+  }
+]
