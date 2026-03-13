@@ -174,7 +174,7 @@
             gap: 15px;
         }
         
-        .issue-item {
+        a.issue-item {
             display: flex;
             align-items: center;
             gap: 15px;
@@ -183,14 +183,16 @@
             border-radius: 12px;
             transition: all 0.3s;
             border-left: 4px solid #667eea;
+            cursor: pointer;
+            color: inherit;
         }
         
-        .issue-item:hover {
+        a.issue-item:hover {
             background: #f0f4ff;
             transform: translateX(5px);
         }
         
-        .issue-item.resolved {
+        a.issue-item.resolved {
             border-left-color: #52c41a;
             opacity: 0.8;
         }
