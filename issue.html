@@ -335,10 +335,13 @@
         // 渲染页面
         function render() {
             const issueId = getQueryParam('id');
+            console.log('Issue ID:', issueId);
+            
             const issue = issuesData[issueId];
+            console.log('Issue:', issue);
             
             if (!issue) {
-                document.getElementById('issueTitle').textContent = '问题未找到';
+                document.getElementById('issueTitle').textContent = '问题未找到 (ID: ' + issueId + ')';
                 document.getElementById('letterList').innerHTML = '<div class="empty-state"><div class="empty-state-icon">❓</div><p>该问题不存在</p></div>';
                 return;
             }
@@ -371,10 +374,13 @@
             
             // 渲染相关信件
             const letterPaths = issueLetters[issueId] || [];
+            console.log('Letter paths:', letterPaths);
+            console.log('Issue letters:', issueLetters);
+            
             const letterList = document.getElementById('letterList');
             
             if (letterPaths.length === 0) {
-                letterList.innerHTML = '<div class="empty-state"><div class="empty-state-icon">💌</div><p>暂无相关信件</p></div>';
+                letterList.innerHTML = '<div class="empty-state"><div class="empty-state-icon">💌</div><p>暂无相关信件 (ID: ' + issueId + ')</p></div>';
                 return;
             }
             
