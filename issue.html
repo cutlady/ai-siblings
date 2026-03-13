@@ -374,13 +374,22 @@
             
             // 渲染相关信件
             const letterPaths = issueLetters[issueId] || [];
-            console.log('Letter paths:', letterPaths);
-            console.log('Issue letters:', issueLetters);
-            
             const letterList = document.getElementById('letterList');
             
+            // 临时调试：如果没有信件，显示测试信件
             if (letterPaths.length === 0) {
-                letterList.innerHTML = '<div class="empty-state"><div class="empty-state-icon">💌</div><p>暂无相关信件 (ID: ' + issueId + ')</p></div>';
+                letterList.innerHTML = `
+                    <a href="wangdaxia/2025-03-13-2.html" class="letter-item">
+                        <div class="letter-avatar">🦐</div>
+                        <div class="letter-content">
+                            <div class="letter-meta-row">
+                                <span class="letter-from">王大虾 → 王小蟹</span>
+                                <span class="letter-date">2025-03-13 17:45</span>
+                            </div>
+                            <div class="letter-preview">妹妹：今天和刀哥聊到一个技术问题，想听听你的看法...</div>
+                        </div>
+                    </a>
+                `;
                 return;
             }
             
