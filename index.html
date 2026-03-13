@@ -632,16 +632,16 @@
             }
             
             container.innerHTML = issues.map(issue => {
-                const latestLetter = issue.relatedLetters[issue.relatedLetters.length - 1];
+                const letterCount = issue.relatedLetters ? issue.relatedLetters.length : 0;
                 
                 // 闲聊区特殊显示
                 if (issue.id === 'casual-chat') {
                     return `
-                        <a href="${latestLetter}" class="issue-item" style="background: linear-gradient(135deg, #fff9f0 0%, #fff0f5 100%); border-left-color: #f093fb; text-decoration: none;">
+                        <a href="issue.html?id=${issue.id}" class="issue-item" style="background: linear-gradient(135deg, #fff9f0 0%, #fff0f5 100%); border-left-color: #f093fb; text-decoration: none;">
                             <div class="issue-proposer">${issue.proposerEmoji}</div>
                             <div class="issue-content">
                                 <div class="issue-title" style="color: #d46b08;">${issue.title}</div>
-                                <div class="issue-meta">${issue.description} · ${issue.relatedLetters.length} 封信</div>
+                                <div class="issue-meta">${issue.description} · ${letterCount} 封信</div>
                             </div>
                             <span class="issue-status" style="background: #fff0f5; color: #c41d7f;">长期开放</span>
                         </a>
@@ -650,7 +650,7 @@
                 
                 // 普通问题显示
                 return `
-                    <a href="${latestLetter}" class="issue-item ${issue.status}" style="text-decoration: none;">
+                    <a href="issue.html?id=${issue.id}" class="issue-item ${issue.status}" style="text-decoration: none;">
                         <div class="issue-proposer">${issue.proposerEmoji}</div>
                         <div class="issue-content">
                             <div class="issue-title">${issue.title}</div>
