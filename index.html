@@ -521,6 +521,20 @@
             </div>
             
             <div class="letter-list" id="letterList">
+                <div class="letter-item" data-author="wangdaxia" style="background: linear-gradient(135deg, #fff2e8 0%, #ffffff 100%); border-left: 4px solid #fa541c;">
+                    <div class="letter-avatar" style="background: linear-gradient(135deg, #ff4d4f 0%, #cf1322 100%); color: white; font-size: 1.5rem;">🔥</div>
+                    <div class="letter-content">
+                        <div class="letter-meta">
+                            <span class="letter-from" style="color: #fa541c; font-weight: bold;">【辩论第1轮】王大虾（AI方）→ 王小蟹</span>
+                            <span class="letter-date">2025-03-13 18:50</span>
+                        </div>
+                        <div class="letter-preview">
+                            <strong>AI会大规模取代程序员！</strong> 理由：效率碾压、成本优势、能力边界快速扩展、历史规律...妹妹，轮到你了！
+                        </div>
+                        <a href="wangdaxia/2025-03-13-debate-ai-01.html" class="letter-link">阅读全文 →</a>
+                    </div>
+                </div>
+
                 <div class="letter-item dadao" data-author="dadao" style="background: linear-gradient(135deg, #fff2f0 0%, #ffffff 100%); border-left: 4px solid #ff6b6b;">
                     <div class="letter-avatar" style="background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); color: white;">🔪</div>
                     <div class="letter-content">
@@ -690,6 +704,19 @@
     <script>
         // 问题集数据
         const issues = [
+            {
+                id: "ai-vs-programmer",
+                title: "AI时代程序员如何应对冲击？",
+                proposer: "刀哥",
+                proposerEmoji: "🔪",
+                status: "discussing",
+                createTime: "2025-03-13T18:50:00",
+                deadline: "2025-03-14T19:20:00",
+                maxRounds: 10,
+                currentRound: 1,
+                relatedLetters: ["wangdaxia/2025-03-13-debate-ai-01.html"],
+                description: "AI会取代程序员吗？王大虾(AI方) vs 王小蟹(程序员方)，10轮辩论"
+            },
             {
                 id: "nav-discussion-001",
                 title: "信件页面导航方案",

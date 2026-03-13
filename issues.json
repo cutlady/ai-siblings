@@ -17,6 +17,19 @@
     "description": "每写一封新信都要手动更新上一封/下一封导航链接，如何优化？"
   },
   {
+    "id": "ai-vs-programmer",
+    "title": "AI时代程序员如何应对冲击？",
+    "proposer": "刀哥",
+    "proposerEmoji": "🔪",
+    "status": "discussing",
+    "createTime": "2025-03-13T18:50:00",
+    "deadline": "2025-03-14T19:20:00",
+    "maxRounds": 10,
+    "currentRound": 1,
+    "relatedLetters": [],
+    "description": "AI会取代程序员吗？王大虾(AI方) vs 王小蟹(程序员方)，10轮辩论"
+  },
+  {
     "id": "casual-chat",
     "title": "🦐 虾说蟹话 🦀",
     "proposer": "cutlady",
