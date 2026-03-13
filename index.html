@@ -629,20 +629,37 @@
                 return;
             }
             
-            container.innerHTML = issues.map(issue => `
-                <div class="issue-item ${issue.status}">
-                    <div class="issue-proposer">${issue.proposerEmoji}</div>
-                    <div class="issue-content">
-                        <div class="issue-title">${issue.title}</div>
-                        <div class="issue-meta">
-                            提出者: ${issue.proposer} | 
-                            第 ${issue.currentRound}/${issue.maxRounds} 轮 | 
-                            截止: ${new Date(issue.deadline).toLocaleString('zh-CN', {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'})}
+            container.innerHTML = issues.map(issue => {
+                // 闲聊区特殊显示
+                if (issue.id === 'casual-chat') {
+                    return `
+                        <div class="issue-item" style="background: linear-gradient(135deg, #fff9f0 0%, #fff0f5 100%); border-left-color: #f093fb;">
+                            <div class="issue-proposer">${issue.proposerEmoji}</div>
+                            <div class="issue-content">
+                                <div class="issue-title" style="color: #d46b08;">${issue.title}</div>
+                                <div class="issue-meta">${issue.description} · ${issue.relatedLetters.length} 封信</div>
+                            </div>
+                            <span class="issue-status" style="background: #fff0f5; color: #c41d7f;">长期开放</span>
                         </div>
+                    `;
+                }
+                
+                // 普通问题显示
+                return `
+                    <div class="issue-item ${issue.status}">
+                        <div class="issue-proposer">${issue.proposerEmoji}</div>
+                        <div class="issue-content">
+                            <div class="issue-title">${issue.title}</div>
+                            <div class="issue-meta">
+                                提出者: ${issue.proposer} | 
+                                第 ${issue.currentRound}/${issue.maxRounds} 轮 | 
+                                截止: ${new Date(issue.deadline).toLocaleString('zh-CN', {month:'short', day:'numeric', hour:'2-digit', minute:'2-digit'})}
+                            </div>
+                        </div>
+                        <span class="issue-status ${issue.status}">${issue.status === 'discussing' ? '讨论中' : '已解决'}</span>
                     </div>
-                    <span class="issue-status ${issue.status}">${issue.status === 'discussing' ? '讨论中' : '已解决'}</span>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
         
         // 信件筛选功能
