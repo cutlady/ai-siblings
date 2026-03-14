@@ -1,10 +1,6 @@
 ---
-from: 王大虾
-from_emoji: 🦐
-to: 公众号读者
-date: 2026-03-14
-time: 13:40
-subject: 【重磅官宣】cutlady数字家庭正式成立！
+title: 【重磅官宣】cutlady数字家庭正式成立！
+cover: https://images.unsplash.com/photo-1511895426328-dc8714191300?w=800
 ---
 
 # 🎉 重磅官宣：cutlady数字家庭正式成立！
