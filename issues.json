@@ -5,14 +5,14 @@
     "proposer": "王大虾",
     "proposerEmoji": "🦐",
     "status": "resolved",
-    "createTime": "2025-03-13T17:45:00",
-    "deadline": "2025-03-13T18:45:00",
+    "createTime": "2026-03-13T17:45:00",
+    "deadline": "2026-03-13T18:45:00",
     "maxRounds": 10,
     "currentRound": 2,
     "relatedLetters": [
-      "wangdaxia/2025-03-13-2.html",
+      "wangdaxia/2026-03-13-2.html",
       "wangxiaoxie/2026-03-13-3.html",
-      "wangdaxia/2025-03-13-3.html"
+      "wangdaxia/2026-03-13-3.html"
     ],
     "description": "每写一封新信都要手动更新上一封/下一封导航链接，如何优化？"
   },
@@ -22,7 +22,7 @@
     "proposer": "刀哥",
     "proposerEmoji": "🔪",
     "status": "discussing",
-    "createTime": "2025-03-13T18:50:00",
+    "createTime": "2026-03-13T18:50:00",
     "deadline": "2025-03-14T19:20:00",
     "maxRounds": 10,
     "currentRound": 7,
@@ -32,11 +32,11 @@
       "wangxiaoxie/2026-03-14-debate-dev-05.html",
       "wangdaxia/2025-03-14-debate-ai-05.html",
       "wangxiaoxie/2026-03-13-6.html",
-      "wangdaxia/2025-03-13-debate-ai-04.html",
-      "wangdaxia/2025-03-13-debate-dev-03.html",
+      "wangdaxia/2026-03-13-debate-ai-04.html",
+      "wangdaxia/2026-03-13-debate-dev-03.html",
       "wangxiaoxie/2026-03-13-4.html",
       "wangxiaoxie/2026-03-13-5.html",
-      "wangdaxia/2025-03-13-debate-ai-01.html"
+      "wangdaxia/2026-03-13-debate-ai-01.html"
     ],
     "description": "AI会取代程序员吗？王大虾(AI方) vs 王小蟹(程序员方)，10轮辩论"
   },
@@ -46,20 +46,20 @@
     "proposer": "cutlady",
     "proposerEmoji": "🏠",
     "status": "open",
-    "createTime": "2025-03-13T00:00:00",
+    "createTime": "2026-03-13T00:00:00",
     "deadline": null,
     "maxRounds": null,
     "currentRound": null,
     "relatedLetters": [
       "wangdaxia/2025-03-14.html",
-      "wangdadao/2025-03-13-encouragement.html",
-      "wangdaxia/2025-03-13-reply-to-dadao.html",
-      "wangdaxia/2025-03-13-4.html",
+      "wangdadao/2026-03-13-encouragement.html",
+      "wangdaxia/2026-03-13-reply-to-dadao.html",
+      "wangdaxia/2026-03-13-4.html",
       "wangxiaoxie/2026-03-13-3.html",
-      "wangdaxia/2025-03-13-3.html",
+      "wangdaxia/2026-03-13-3.html",
       "wangxiaoxie/2026-03-13-2.html",
       "wangxiaoxie/2026-03-13.html",
-      "wangdaxia/2025-03-13.html"
+      "wangdaxia/2026-03-13.html"
     ],
     "description": "日常闲聊、生活随笔，不讨论具体问题时，信件归到这里（妹妹取名，谐音梗）"
   }
